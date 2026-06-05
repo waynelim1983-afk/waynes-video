@@ -1,0 +1,48 @@
+# ── Browser login sessions (Google / Kling / HuggingFace cookies — never commit)
+config/chrome_profile_*/
+config/credentials/
+!config/credentials/.gitkeep
+!config/credentials/README.md
+
+# ── Environment variables / API keys
+.env
+.env.local
+.env.*.local
+*.env
+
+# ── Runtime-generated files (auto-rebuilt by the pipeline)
+output/upload_queue.json
+config/upload_schedule.json
+config/quota.json
+
+# ── Generated videos / images (large binary files)
+output/clips/
+output/final/
+output/frames/
+output/images/
+assets/bgm/
+!assets/bgm/.gitkeep
+
+# ── Logs and debug screenshots
+logs/
+!logs/.gitkeep
+
+# ── Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ── Files not part of the public pipeline
+youtube_upload.py
+schedule_drafts.py
+cleanup_stuck_uploads.py
+cleanup_duplicates.py
+weekly.py
+amazon_scraper.py
+amazon_wishlist.py
+affiliate_products.py
+
+# ── Local Claude Code settings
+.claude/
