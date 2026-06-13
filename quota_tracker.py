@@ -1,4 +1,4 @@
-﻿"""
+"""
 Veo 3 monthly quota tracker
   - 1000 points / month
   - 20 points per video (9:16, 1x, veo-3.1-fast)

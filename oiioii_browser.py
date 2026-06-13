@@ -1,4 +1,4 @@
-﻿"""
+"""
 oiioii_browser.py — 用 Playwright 操作 oiioii.ai 生成影片（OiiOii 備援）
 
   - 使用 Seedance 2.0 Pro 模型

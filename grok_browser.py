@@ -1,4 +1,4 @@
-﻿"""
+"""
 grok_browser.py — 用 Playwright 操作 grok.com 生成影片（Grok 備援）
 
   - 免費 tier：每天 10 支影片（對備援需求綽綽有餘）

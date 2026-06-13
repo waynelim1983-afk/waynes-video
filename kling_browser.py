@@ -1,4 +1,4 @@
-﻿"""
+"""
 kling_browser.py — 用 Playwright 操作 kling.ai 生成影片（Kling AI 備援）
 
   - 免費 tier：依帳號，Standard 5s 每支消耗 10 credits

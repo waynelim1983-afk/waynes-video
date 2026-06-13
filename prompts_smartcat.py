@@ -1,4 +1,4 @@
-﻿# C:\projects\YT\amazon\prompts_smartcat.py
+# C:\projects\YT\amazon\prompts_smartcat.py
 # Smart Cat Slave Daily Life — 動態影片提示詞庫
 #
 # 所有 prompt 為 template 格式，變數由 fill_prompt() 動態填入：

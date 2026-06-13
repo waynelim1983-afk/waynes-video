@@ -1,4 +1,4 @@
-﻿"""
+"""
 huggingface_wan2.py — 呼叫 HuggingFace Wan2.1 Space
 
   - 完全免費、無浮水印（watermark_wan=False）

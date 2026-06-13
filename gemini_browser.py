@@ -1,4 +1,4 @@
-﻿"""
+"""
 gemini_browser.py — 用 Playwright 操作 Gemini 動態生成影片 prompt
 
   - 共用 chrome_profile_aistudio（與 veo3_browser.py 同一 Google session，不需重新登入）
