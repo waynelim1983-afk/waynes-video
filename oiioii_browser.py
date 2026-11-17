@@ -14,7 +14,7 @@ oiioii_browser.py — 用 Playwright 操作 oiioii.ai 生成影片（OiiOii 備�
   python oiioii_browser.py --login-only
 
 正常生影：
-  python oiioii_browser.py --prompt "..." --output "C:\\YT\\amazon\\output\\clips\\xxx.mp4"
+  python oiioii_browser.py --prompt "..." --output "output\\clips\\xxx.mp4"
 """
 
 import sys
@@ -28,7 +28,7 @@ from pathlib import Path
 
 from prompt_validator import validate_prompt
 
-BASE_DIR       = Path(r"C:\projects\YT\amazon")
+BASE_DIR       = Path(__file__).parent
 LOG_FILE       = BASE_DIR / "logs" / "daily.log"
 CHROME_PROFILE = BASE_DIR / "config" / "chrome_profile_oiioii"
 

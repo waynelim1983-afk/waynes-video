@@ -22,7 +22,7 @@ import argparse
 import logging
 from pathlib import Path
 
-BASE_DIR      = Path(r"C:\projects\YT\amazon")
+BASE_DIR      = Path(__file__).parent
 LOG_FILE      = BASE_DIR / "logs" / "daily.log"
 CHROME_PROFILE = BASE_DIR / "config" / "chrome_profile_aistudio"  # 共用 Veo3 session
 GEMINI_URL    = "https://gemini.google.com"

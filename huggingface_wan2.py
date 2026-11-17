@@ -14,7 +14,7 @@ huggingface_wan2.py — 呼叫 HuggingFace Wan2.1 Space
   pip install gradio_client httpx
 
 正常生影：
-  python huggingface_wan2.py --prompt "..." --output "C:\\YT\\amazon\\output\\clips\\xxx.mp4"
+  python huggingface_wan2.py --prompt "..." --output "output\\clips\\xxx.mp4"
 
 測試：
   python huggingface_wan2.py --test
@@ -28,7 +28,7 @@ import argparse
 import logging
 from pathlib import Path
 
-BASE_DIR = Path(r"C:\projects\YT\amazon")
+BASE_DIR = Path(__file__).parent
 LOG_FILE = BASE_DIR / "logs" / "daily.log"
 
 HF_SPACE    = "wan-ai/Wan2.1"

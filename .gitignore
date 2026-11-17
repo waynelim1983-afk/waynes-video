@@ -42,7 +42,9 @@ cleanup_duplicates.py
 weekly.py
 amazon_scraper.py
 amazon_wishlist.py
-affiliate_products.py
 
 # ── Local Claude Code settings
 .claude/
+
+# 自己的選品清單（可能含商品連結）
+config/products.json

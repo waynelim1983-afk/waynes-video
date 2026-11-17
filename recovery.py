@@ -25,7 +25,7 @@ import subprocess
 import urllib.request
 from pathlib import Path
 
-BASE_DIR   = Path(r"C:\projects\YT\amazon")
+BASE_DIR   = Path(__file__).parent
 CLIPS_DIR  = BASE_DIR / "output" / "clips"
 QUEUE_FILE = BASE_DIR / "output" / "upload_queue.json"
 CONFIG_FILE = BASE_DIR / "config" / "flow_config.json"
@@ -200,8 +200,8 @@ def _rebuild_entry_from_clip(clip_path: Path) -> dict:
         "description": desc,
         "tags":        ["SmartCatLife", "PetTech", "CatGadgets", "SmartPet",
                         "CatMom", "CatDad", "AutomaticLitterBox", "Shorts"],
-        "product":     product["name"],
-        "asin":        product["asin"],
+        "product":     product.get("name", ""),
+        "asin":        product.get("asin"),
         "recovered":   True,   # 標記為 recovery 補入
     }
 

@@ -8,7 +8,7 @@ import json
 from datetime import datetime
 from pathlib import Path
 
-QUOTA_FILE   = Path(r"C:\projects\YT\amazon\logs\quota.json")
+QUOTA_FILE   = Path(__file__).parent / "logs" / "quota.json"
 MONTHLY_QUOTA   = 1940   # Flow 点數(1000) + AI 备用点數(940)，实际剩余以 Google Flow UI 为准
 COST_PER_VIDEO  = 20
 RESET_DAY       = 9

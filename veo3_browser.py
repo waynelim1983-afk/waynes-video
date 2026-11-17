@@ -7,7 +7,7 @@ veo3_browser.py — 用 Playwright 操作 Google Flow 生成 Veo 3 影片
   python veo3_browser.py --login-only
 
 正常生影：
-  python veo3_browser.py --prompt "..." --output "C:\\YT\\amazon\\output\\clips\\xxx.mp4"
+  python veo3_browser.py --prompt "..." --output "output\\clips\\xxx.mp4"
 """
 
 import sys
@@ -20,7 +20,7 @@ from pathlib import Path
 
 from prompt_validator import validate_prompt
 
-BASE_DIR     = Path(r"C:\projects\YT\amazon")
+BASE_DIR     = Path(__file__).parent
 LOG_FILE     = BASE_DIR / "logs" / "daily.log"
 CONFIG_FILE  = BASE_DIR / "config" / "flow_config.json"
 
@@ -1462,4 +1462,4 @@ if __name__ == "__main__":
         print("用法：")
         print("  python veo3_browser.py --login-only")
         print(f"  python veo3_browser.py --set-project \"https://labs.google/fx/zh/tools/flow/project/XXX\"")
-        print('  python veo3_browser.py --prompt "..." --output "C:\\YT\\...\\video.mp4"')
+        print('  python veo3_browser.py --prompt "..." --output "output\\clips\\video.mp4"')

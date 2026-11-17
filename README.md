@@ -53,6 +53,7 @@ waynes-video/
 ├── # ── Prompt 與檢查
 ├── prompts_smartcat.py     # Prompt 範本
 ├── prompt_validator.py     # Prompt 檢查工具
+├── affiliate_products.py   # 選品（內建虛構示範產品，可改讀 config/products.json）
 │
 ├── # ── 工具
 ├── quota_tracker.py        # Veo 3 每月配額追蹤
@@ -94,6 +95,8 @@ playwright install chromium
 cp config/flow_config.example.json config/flow_config.json
 # 編輯 flow_config.json，把 YOUR_PROJECT_ID_HERE 換掉
 ```
+
+選品預設使用內建的虛構示範產品。要換成自己的選品，建立 `config/products.json`（格式見 `affiliate_products.py` 開頭說明，這個檔案已加進 `.gitignore`）。
 
 第一次執行時，各平台模組會開啟 Chrome 請你登入。登入狀態存在 `config/credentials/`（只留在本機，絕對不要提交這個資料夾）。
 

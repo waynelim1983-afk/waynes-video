@@ -9,7 +9,7 @@ grok_browser.py — 用 Playwright 操作 grok.com 生成影片（Grok 備援）
   python grok_browser.py --login-only
 
 正常生影：
-  python grok_browser.py --prompt "..." --output "C:\\YT\\amazon\\output\\clips\\xxx.mp4"
+  python grok_browser.py --prompt "..." --output "output\\clips\\xxx.mp4"
 """
 
 import sys
@@ -21,7 +21,7 @@ import logging
 import urllib.request
 from pathlib import Path
 
-BASE_DIR       = Path(r"C:\projects\YT\amazon")
+BASE_DIR       = Path(__file__).parent
 LOG_FILE       = BASE_DIR / "logs" / "daily.log"
 CHROME_PROFILE = BASE_DIR / "config" / "chrome_profile_grok"
 
